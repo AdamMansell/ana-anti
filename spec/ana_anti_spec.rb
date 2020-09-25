@@ -14,4 +14,7 @@ describe("#anagramFunc") do
   it ("it reads anagrams that have different cases and checks to see that they're still discovered") do
     expect(anagramFunc("CaFe", "fAcE")).to(eq("These words are anagrams!"))
   end
+  it ("does the thing") do
+    expect(gramFunc("why are you so stressed about desserts")).to(eq("These words are anagrams!"))
+  end
 end

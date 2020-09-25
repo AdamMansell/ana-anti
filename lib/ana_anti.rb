@@ -15,7 +15,7 @@ charCheck2 = word2.downcase.chars.sort.join
 puts charCheck2
 
 # check if equal
-# antigramTest = (charCheck1.include?(charCheck2) == false ? (return "These words have no letter matches and are antigrams.") : (return "It got nothing"))
+# antigramTest = (charCheck1.include?(charCheck2) ? (return "These words have no letter matches and are antigrams.") : (return "It got nothing"))
 # anagramTest = (charCheck1 == charCheck2 ? (return "These words are anagrams!" ) : antigramTest)
 ((charCheck1.match(/[aeiou]/)) && (charCheck2.match(/[aeiou]/))) ? (charCheck1 == charCheck2 ? (return "These words are anagrams!" ) : (charCheck1.include?(charCheck2) ? (return "It got nothing") : (return "These words have no letter matches and are antigrams."))) : (return "You need to input actual words!")
 

@@ -5,12 +5,27 @@ def anagramFunc(word1, word2)
 puts "VALUE:" << word1
 puts "LENGTH:" << String(word1.length)
 
+wordArray1 = []
+wordArray2 = []
+
 for i in 0..word1.length - 1
   puts "CHAR FORWARD:" << word1[i]
+  wordArray1.push(word1[i])
 end
 
+puts "VALUE:" << word2
+puts "LENGTH:" << String(word2.length)
+
+for i in 0..word2.length - 1
+  puts "CHAR FORWARD:" << word2[i]
+  wordArray2.push(word2[i])
+end
+
+puts wordArray1
+puts wordArray2
 
 
-  puts("You will have #{quarter_count} quarter(s), #{dime_count} dime(s), #{nickel_count} nickel(s), and #{penny_count} pennies.")
-  return quarter_count, dime_count, nickel_count, penny_count
+
+  puts("These words are anagrams!")
+  return "These words are anagrams!"
 end

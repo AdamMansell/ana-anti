@@ -3,6 +3,6 @@ require ('ana_anti')
 
 describe("#anagramFunc") do
   it ("it reads words and checks for anagrams") do
-    expect(annagramFunc("dog god")).to(eq("These words are anagrmas!"))
+    expect(anagramFunc("dog", "god")).to(eq("These words are anagrams!"))
   end
 end

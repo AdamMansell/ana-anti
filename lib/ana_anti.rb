@@ -24,8 +24,7 @@ def gramFunc(sentence)
   sentArray = sentence.downcase.split(" ")
   charArray = []
   sentArray.each { |word| charArray.push(word.chars.sort.join + ",")}
-  charArray.each { |char| (char.length).match(charArray)}
-
-  
-  return
+  anagrams = charArray.each.select { |char| charArray.count(char) > 1}
+  puts anagrams.uniq
+  anagrams.uniq ? (return "There's an anagram in this sentence!") : (return "No Anagrams here sorry!")
 end

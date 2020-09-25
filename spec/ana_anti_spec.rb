@@ -6,6 +6,6 @@ describe("#anagramFunc") do
     expect(anagramFunc("dog", "god")).to(eq("These words are anagrams!"))
   end
   it ("it reads words and checks for antigrams") do
-    expect(anagramFunc("hi", "bye")).to(eq("These words are anagrams!"))
+    expect(anagramFunc("hi", "bye")).to(eq("These words have no letter matches and are antigrams."))
   end
 end

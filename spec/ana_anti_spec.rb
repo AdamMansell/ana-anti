@@ -9,6 +9,6 @@ describe("#anagramFunc") do
     expect(anagramFunc("hi", "bye")).to(eq("These words have no letter matches and are antigrams."))
   end
   it ("it reads words and checks for antigrams") do
-    expect(anagramFunc("zzz", "xxx")).to(eq("These words have no letter matches and are antigrams."))
+    expect(anagramFunc("zzz", "xxx")).to(eq("You need to input actual words!"))
   end
 end

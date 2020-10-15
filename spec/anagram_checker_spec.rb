@@ -19,7 +19,7 @@ describe("#is_anagram") do
 
   it ("it reads and checks to see if words are valid") do
     anagram_checker = AnagramChecker.new("zzz", "xxx")
-    expect(anagram_checker.is_antigram).to eq("You need to input actual words!") 
+    expect(anagram_checker.is_antigram).to eq("zzz is not a valid word")
   end
 
   it ("checks for valid words, anagram and/or anigram combinations in a given phrase of words") do
